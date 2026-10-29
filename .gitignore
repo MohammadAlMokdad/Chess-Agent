@@ -1,0 +1,49 @@
+# --- Python -----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- Secrets / local environment -------------------------------------------
+.env
+.env.*
+!.env.example
+
+# --- Chess engine -----------------------------------------------------------
+# Stockfish is downloaded separately (see README). Never commit the binary,
+# its archive, or the macOS setup script's scratch folder.
+engine/
+*.exe
+*.tar.gz
+*.zip
+
+# --- Generated at runtime ---------------------------------------------------
+# Screen calibration is specific to one monitor, board position and theme;
+# `python run.py calibrate` creates it.
+calibration.json
+# Screenshots written by `detect` / `calibrate`.
+debug/
+*.log
+
+# --- Editors, OS and AI assistants -----------------------------------------
+.claude/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

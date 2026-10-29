@@ -1,0 +1,8 @@
+{
+  "site": "chess.com",
+  "theme": "neo pieces, green board, 1080px",
+  "note": "Captured from a live game the agent deadlocked on. Black has just played f7-f6; f6 is a dark square under chess.com's yellow last-move highlight, which lifts it from 133 to 185 luma -- brighter than the grey black pawn standing on it. Reading f6 against a stored base tone classified it as a white piece, the true move scored 63/64, and MIN_MARGIN rejected it forever.",
+  "playing_white": true,
+  "expect_fen_board": "R4b1r/1p4pp/3kpp2/1p1p4/1PrP4/2PQBN2/5PPP/1N1K3R",
+  "expect_square": {"f6": "BLACK"}
+}
